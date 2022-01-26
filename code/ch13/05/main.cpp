@@ -1,0 +1,34 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int sumSquareList(vector<int> arrayA) {
+    int sumx = 0;
+    for (int a: arrayA) {
+        sumx = sumx + a * a;
+    }
+    return sumx;
+}
+
+int main() {
+    vector<int> A {1, 2, 3, 4, 5};
+    cout << sumSquareList(A);
+    return 0;
+}
+
+/*
+บรรทัดที่ 01 : import library ชื่อ iostream
+บรรทัดที่ 02 : import library ชื่อ vector
+บรรทัดที่ 04 : import library ชื่อ standard namespace
+
+บรรทัดที่ 06 : ประกาศฟังก์ชันชื่อ sumSquareList ที่รับ parameter เป็น arrayA 
+บรรทัดที่ 07 : สร้างตัวแปรชื่อ sumx และกำหนดค่าเท่ากับ 0
+บรรทัดที่ 08-10 : นำสมาชิกแต่ละตัวใน arrayA มายกกำลังสอง แล้วนำไปบวกเพิ่มที่ sumx
+บรรทัดที่ 11 : return sumx ออกมา
+
+บรรทัดที่ 14 : ฟังก์ชัน main โปรแกรมจะเริ่มรันฟังก์ชันนี้เป็นฟังก์ชันแรก
+บรรทัดที่ 15 : สร้างตัวแปรชื่อ A และกำหนดให้เป็น {1, 2, 3, 4, 5}
+บรรทัดที่ 16 : print ค่าที่ได้จาก sumSquareList(A)
+บรรทัดที่ 17 : return 0 เพื่อบอกว่าโปรแกรมรันสำเร็จ
+*/
